@@ -1,0 +1,88 @@
+.peer-to-peer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-animation {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.validators-container {
+  margin-top: 20px;
+}
+
+.validators-heading {
+  font-weight: bold;
+}
+
+.validators-list {
+  list-style: none;
+  padding: 0;
+}
+
+.validators-list li {
+  margin-bottom: 4px;
+}
+
+/* Additional styles for better user experience */
+.button-animation:focus,
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.validators-list li::before {
+  content: "✓ ";
+  color: green;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.peer-to-peer {
+  margin: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.validators-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.validators-list li {
+  font-size: 16px;
+}
+
